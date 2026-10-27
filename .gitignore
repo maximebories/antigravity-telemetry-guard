@@ -1,0 +1,7 @@
+bare.md
+privacy.md
+.DS_Store
+__pycache__/
+*.pyc
+*.privacy-bak.*
+*.log

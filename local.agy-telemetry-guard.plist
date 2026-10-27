@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>local.agy-telemetry-guard</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/python3</string>
+		<string>./disable_antigravity_telemetry.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>5</integer>
+	<key>WatchPaths</key>
+	<array>
+		<string>~/.gemini/config/config.json</string>
+		<string>~/.gemini/config</string>
+		<string>~/.gemini/antigravity-cli/settings.json</string>
+		<string>~/.gemini/settings.json</string>
+	</array>
+	<key>StandardOutPath</key>
+	<string>~/.gemini/telemetry-guard.log</string>
+	<key>StandardErrorPath</key>
+	<string>~/.gemini/telemetry-guard.log</string>
+</dict>
+</plist>
